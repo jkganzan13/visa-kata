@@ -1,6 +1,31 @@
 import Checkout from './index';
 
-const pricingRules = [];
+const pricingRules = [
+  {
+    key: 'A',
+    price: 50,
+    special: {
+      price: 130,
+      quantity: 3,
+    },
+  },
+  {
+    key: 'B',
+    price: 30,
+    special: {
+      price: 45,
+      quantity: 2,
+    },
+  },
+  {
+    key: 'C',
+    price: 20,
+  },
+  {
+    key: 'D',
+    price: 15,
+  },
+];
 
 describe('Checkout tests', () => {
   describe('Totals - single items', () => {
